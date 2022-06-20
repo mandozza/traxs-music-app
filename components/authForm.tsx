@@ -17,7 +17,7 @@ const AuthForm: FC<{ mode: "signin" | "signup" }> = ({ mode }) => {
     const user = await auth(mode, { email, password });
     setIsLoading(false);
     router.push("/");
-  }
+  };
 
   return (
     <Box height="100vh" width="100vw" bg="black" color="white">
